@@ -39,7 +39,7 @@
 
           <div class="me-view-end">
             <el-alert
-              title="文章End..."
+              title="The End"
               type="success"
               center
               :closable="false">
@@ -153,7 +153,9 @@
     computed: {
       avatar() {
         let avatar = this.$store.state.avatar
-
+        if (avatar == null) {
+            return null;
+        }
         if (avatar.length > 0) {
           return avatar
         }

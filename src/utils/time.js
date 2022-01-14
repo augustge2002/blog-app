@@ -5,13 +5,13 @@ export function formatTime(time) {
   const diff = (now - d) / 1000
 
   if (diff < 30) {
-    return '刚刚'
+    return 'Just Now'
   } else if (diff < 3600) { // less 1 hour
-    return Math.ceil(diff / 60) + '分钟前'
+    return Math.ceil(diff / 60) + 'Minutes Ago'
   } else if (diff < 3600 * 24) {
-    return Math.ceil(diff / 3600) + '小时前'
+    return Math.ceil(diff / 3600) + 'Hours Ago'
   } else if (diff < 3600 * 24 * 2) {
-    return '1天前'
+    return 'More Than A Day Ago'
   }
 
   return time

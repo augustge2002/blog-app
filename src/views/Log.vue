@@ -27,7 +27,7 @@
         <pre>
 
       ```
-      # 无
+      # None
 
       ```
 			 </pre>
@@ -44,7 +44,7 @@
     },
     computed: {
       title (){
-        return '日志 - 码神之路'
+        return 'Log'
       }
     }
   }
