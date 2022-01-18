@@ -87,13 +87,13 @@ router.beforeEach((to, from, next) => {
       next({path: '/'})
     } else {
       if (store.state.account.length === 0) {
-        store.dispatch('getUserInfo').then(data => { //获取用户信息
+        store.dispatch('getUserInfo').then(data => { 
             next()
         }).catch(() => {
           Message({
             type: 'warning',
             showClose: true,
-            message: '登录已过期'
+            message: 'Session expired'
           })
           next({path: '/'})
         })
@@ -107,7 +107,7 @@ router.beforeEach((to, from, next) => {
       Message({
         type: 'warning',
         showClose: true,
-        message: '请先登录哦'
+        message: 'Please Login First'
       })
 
     }
