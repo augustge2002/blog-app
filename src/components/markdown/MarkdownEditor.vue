@@ -4,7 +4,8 @@
     ref="md"
     v-model="editor.value"
     @imgAdd="imgAdd"
-    v-bind="editor">
+    v-bind="editor"
+    language = "en">
   </mavon-editor>
 </template>
 

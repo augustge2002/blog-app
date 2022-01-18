@@ -7,7 +7,7 @@
       <div class="me-view-info">
         <span class="me-view-nickname">{{comment.author.nickname}}</span>
         <div class="me-view-meta">
-          <span>{{rootCommentCounts - index}}楼</span>
+          <span>{{rootCommentCounts - index}}</span>
           <span>{{comment.createDate | format}}</span>
         </div>
       </div>
@@ -19,7 +19,7 @@
         <!--<i class="el-icon-caret-top"></i> 20-->
         <!--</a>-->
         <a class="me-view-comment-tool" @click="showComment(-1,comment.author)">
-          <i class="me-icon-comment"></i>&nbsp; 评论
+          <i class="me-icon-comment"></i>&nbsp; Comment
         </a>
       </div>
 
@@ -75,7 +75,7 @@
     },
     data() {
       return {
-        placeholder: '你的评论...',
+        placeholder: 'Your comment...',
         commentShow: false,
         commentShowIndex: '',
         reply: this.getEmptyReply()
@@ -90,7 +90,7 @@
             this.placeholder = `@${toUser.nickname} `
             this.reply.toUserId = toUser.id
           } else {
-            this.placeholder = '你的评论...'
+            this.placeholder = 'Your comment...'
           }
 
           this.commentShow = true
@@ -108,7 +108,7 @@
 
         publishComment(that.reply,this.$store.state.token).then(data => {
           if(data.success){
-            that.$message({type: 'success', message: '评论成功', showClose: true})
+            that.$message({type: 'success', message: 'Comment succuess', showClose: true})
             if(!that.comment.childrens){
               that.comment.childrens = []
             }
@@ -120,7 +120,7 @@
           }
         }).catch(error => {
           if (error !== 'error') {
-            that.$message({type: 'error', message: '评论失败', showClose: true})
+            that.$message({type: 'error', message: 'Comment failed', showClose: true})
           }
         })
 
