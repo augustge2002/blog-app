@@ -15,11 +15,11 @@
         <!-- top tags -->
         <card-tag :tags="hotTags"></card-tag>
 
-        <card-article cardHeader="Top Posts" :articles="hotArticles"></card-article>
+        <card-article cardHeader="Top Articles" :articles="hotArticles"></card-article>
 
-        <card-archive cardHeader="Article Posts" :archives="archives"></card-archive>
+        <card-archive cardHeader="Article Archives" :archives="archives"></card-archive>
 
-        <card-article cardHeader="Lastest Posts" :articles="newArticles"></card-article>
+        <card-article cardHeader="Lastest Articles" :articles="newArticles"></card-article>
 
       </el-aside>
 

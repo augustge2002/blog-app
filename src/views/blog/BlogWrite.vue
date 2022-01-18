@@ -26,7 +26,7 @@
 
           </div>
           <div id="placeholder" style="visibility: hidden;height: 89px;display: none;"></div>
-          <markdown-editor :editor="articleForm.editor" language="en" class="me-write-editor"></markdown-editor>
+          <markdown-editor :editor="articleForm.editor" class="me-write-editor"></markdown-editor>
         </el-main>
       </el-container>
 

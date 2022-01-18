@@ -5,13 +5,13 @@ export function formatTime(time) {
   const diff = (now - d) / 1000
 
   if (diff < 30) {
-    return 'Just Now'
+    return 'Just now'
   } else if (diff < 3600) { // less 1 hour
-    return Math.ceil(diff / 60) + ' minutes Ago'
+    return Math.ceil(diff / 60) + ' minutes ago'
   } else if (diff < 3600 * 24) {
-    return Math.ceil(diff / 3600) + ' hours Ago'
+    return Math.ceil(diff / 3600) + ' hours ago'
   } else if (diff < 3600 * 24 * 2) {
-    return 'More Than A Day Ago'
+    return 'More than a day ago'
   }
 
   return time
