@@ -14,7 +14,7 @@ The front end of my personal blog
 * View article
 ![View Article](https://i.imgur.com/TycIqFZ.png)
 
-* Sign up page
+* Sign up page  
 ![View Article](https://i.imgur.com/8yOjM2s.png)
 
 * Article archive
